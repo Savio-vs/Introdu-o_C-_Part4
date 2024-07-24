@@ -1,0 +1,14 @@
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\bin\Debug\net8.0\TreinamentoMicrosoft.exe
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\bin\Debug\net8.0\TreinamentoMicrosoft.deps.json
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\bin\Debug\net8.0\TreinamentoMicrosoft.runtimeconfig.json
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\bin\Debug\net8.0\TreinamentoMicrosoft.dll
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\bin\Debug\net8.0\TreinamentoMicrosoft.pdb
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.AssemblyInfoInputs.cache
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.AssemblyInfo.cs
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.csproj.CoreCompileInputs.cache
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.dll
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\refint\TreinamentoMicrosoft.dll
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.pdb
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\TreinamentoMicrosoft.genruntimeconfig.cache
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\obj\Debug\net8.0\ref\TreinamentoMicrosoft.dll
