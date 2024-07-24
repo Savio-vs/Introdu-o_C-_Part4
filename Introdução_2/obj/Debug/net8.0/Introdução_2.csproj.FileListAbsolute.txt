@@ -12,3 +12,4 @@ C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\Introdução_2\obj\Debu
 C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\Introdução_2\obj\Debug\net8.0\Introdução_2.pdb
 C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\Introdução_2\obj\Debug\net8.0\Introdução_2.genruntimeconfig.cache
 C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\Introdução_2\obj\Debug\net8.0\ref\Introdução_2.dll
+C:\Users\paulo.desouza\Desktop\.NET\TreinamentoMicrosoft\Introdução_2\obj\Debug\net8.0\Introdução_2.sourcelink.json

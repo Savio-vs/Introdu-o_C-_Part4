@@ -175,3 +175,32 @@ foreach (var pallet in pallets)
     Console.WriteLine($"-- {pallet}");
 }
 */
+// >>> Escrever código para inverter cada palavra de uma mensagem
+/*
+string pangram = "The quick brown fox jumps over the lazy dog";
+
+string [] palavras = pangram.Split(' ');
+foreach (string palavra in palavras)
+{   
+    char[] ch = palavra.ToCharArray();
+    Array.Reverse(ch);
+    string palavraReverse = new string(ch);
+    Console.Write(palavraReverse+" ");
+}
+*/
+//>>>  Concluir um desafio em que é preciso analisar uma cadeia de caracteres de pedidos, classificá-los e marcar possíveis erros
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+
+string[] idProduto = orderStream.Split(",");
+Array.Sort(idProduto);
+for (int i = 0;i< idProduto.Length;i++)
+{
+   
+    if (idProduto[i].Length == 4)
+    {
+        Console.WriteLine($"{idProduto[i]}");
+    }else
+    {
+        Console.WriteLine($"{idProduto[i]}\t- Erro");
+    }
+}
