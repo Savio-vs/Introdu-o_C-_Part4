@@ -189,6 +189,7 @@ foreach (string palavra in palavras)
 }
 */
 //>>>  Concluir um desafio em que é preciso analisar uma cadeia de caracteres de pedidos, classificá-los e marcar possíveis erros
+/*
 string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
 
 string[] idProduto = orderStream.Split(",");
@@ -204,3 +205,134 @@ for (int i = 0;i< idProduto.Length;i++)
         Console.WriteLine($"{idProduto[i]}\t- Erro");
     }
 }
+*/
+// >>> Metodos string
+/*
+Métodos que adicionam espaços em branco para fins de formatação (PadLeft(), PadRight())
+Métodos que comparam duas cadeias de caracteres ou facilitam a comparação (Trim(), TrimStart(), TrimEnd(), GetHashcode(), a propriedade Length)
+Métodos que ajudam a determinar o que há dentro de uma cadeia de caracteres ou até mesmo recuperar apenas uma parte da cadeia de caracteres (Contains(), StartsWith(), EndsWith(), Substring())
+Métodos que alteram o conteúdo da cadeia de caracteres substituindo, inserindo ou removendo partes (Replace(), Insert(), Remove())
+Métodos que transformam uma cadeia de caracteres em uma matriz de cadeias de caracteres ou de caracteres (Split(), ToCharArray())
+*/
+/*
+string input = "Pad this";
+Console.WriteLine(input.PadLeft(12));
+Console.WriteLine(input.PadLeft(12,'-'));
+Console.WriteLine(input.PadLeft(12,'-'));
+
+string paymentId = "769C";
+string payeeName = "Mr. Stephen Ortega";
+string paymentAmount = "$5,000.00";
+
+var formattedLine = paymentId.PadRight(6);
+formattedLine += payeeName.PadRight(24);
+formattedLine += paymentAmount.PadLeft(10);
+
+Console.WriteLine("1234567890123456789012345678901234567890");
+Console.WriteLine(formattedLine);
+
+// >>>> Desafio
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+
+Console.WriteLine($"Dear {customerName},");
+Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n");
+
+Console.WriteLine($"Currently, you own {currentShares:N2} shares at a return of {currentReturn:P2}.\n");
+
+Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:P2}.  Given your current volume, your potential profit would be ¤{newProfit:N2}.\n");
+
+Console.WriteLine("Here's a quick comparison:\n");
+
+string comparisonMessage = string.Format($"Magic Yield         {currentReturn:P2}   {currentProfit:C} \nGlorious Future     {newReturn:P2}   {newProfit:C}");
+
+
+
+Console.WriteLine(comparisonMessage);
+
+
+*/
+/*
+string message = "Find what is (inside the parentheses)";
+// Identificar qual a posição dos parenteses em message.
+int openingPosition = message.IndexOf('('); 
+int closingPosition = message.IndexOf(')');
+
+openingPosition+=1;
+int length = closingPosition - openingPosition; // o +1 faz com que os parenteses sejam ignorados na hora de saber o tamanho da frase entre parentese.
+//imprimir somento o que estiver entre os parenteses de message.
+Console.WriteLine(message.Substring(openingPosition, length));
+*/
+
+// Recuperar a última ocorrência de uma subcadeia de caracteres
+/*
+string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+int openingPosition = message.LastIndexOf('(');
+
+openingPosition += 1;
+int closingPosition = message.LastIndexOf(')');
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));
+*/
+
+//Recuperar todas as instâncias de subcadeias de caracteres dentro de parênteses
+/*
+string message = "(What if) there are (more than) one (set of parentheses)?";
+while (true)
+{
+    int openingPosition = message.IndexOf('(');// se o caractere não for achado IndexOf retornará -1.
+    if (openingPosition == -1) break;
+
+    openingPosition += 1;
+    int closingPosition = message.IndexOf(')');
+    int length = closingPosition - openingPosition;
+    Console.WriteLine(message.Substring(openingPosition, length));
+
+    // Note the overload of the Substring to return only the remaining 
+    // unprocessed message:
+    message = message.Substring(closingPosition + 1);
+}
+*/
+
+// Trabalhar com diferentes tipos de conjuntos de símbolos
+/*
+string message = "Help (find) the {opening symbols}";
+Console.WriteLine($"Searching THIS Message: {message}");
+char[] openSymbols = { '[', '{', '(' };
+int startPosition = 5;
+//Pesquise com .IndexOfAny() para retornar o índice do primeiro símbolo da matriz openSymbols encontrada na cadeia de caracteres message.
+int openingPosition = message.IndexOfAny(openSymbols);
+Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
+
+openingPosition = message.IndexOfAny(openSymbols, startPosition);
+Console.WriteLine($"Found WITH using startPosition {startPosition}:  {message.Substring(openingPosition)}");
+
+*/
+
+// >>> Desafio: extrair, substituir e remover os dados de uma cadeia de caracteres de entrada
+
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+
+int startPosition = input.IndexOf("<span>");
+startPosition +=6;
+int endPosition = input.IndexOf("</span>");
+int length = endPosition - startPosition;
+
+string quantity = input.Substring(startPosition, length);
+
+startPosition = input.IndexOf("<h2>");
+length = (endPosition + 7) - startPosition;
+string output = input.Substring(startPosition, length);
+
+// Your work here
+
+Console.WriteLine($"Quantity: {quantity}");
+Console.WriteLine($"Output: {output}");
